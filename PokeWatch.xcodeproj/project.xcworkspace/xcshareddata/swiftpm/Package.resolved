@@ -9,6 +9,24 @@
           "revision": "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
           "version": "5.5.0"
         }
+      },
+      {
+        "package": "PokemonAPI",
+        "repositoryURL": "https://github.com/kinkofer/PokemonAPI",
+        "state": {
+          "branch": "master",
+          "revision": "37a011db6eb879fad867187ff22c037091df6a3d",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON",
+        "state": {
+          "branch": "master",
+          "revision": "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
+          "version": null
+        }
       }
     ]
   },
