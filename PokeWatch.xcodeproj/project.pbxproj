@@ -21,6 +21,7 @@
 		C39499B727852F8C002D5038 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39499B627852F8C002D5038 /* ComplicationController.swift */; };
 		C39499B927852F8D002D5038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39499B827852F8D002D5038 /* Assets.xcassets */; };
 		C39499BC27852F8D002D5038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39499BB27852F8D002D5038 /* Preview Assets.xcassets */; };
+		C39499CE27853392002D5038 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C39499CD27853392002D5038 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39499CE27853392002D5038 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +194,9 @@
 				C39499A127852F8A002D5038 /* PBXTargetDependency */,
 			);
 			name = PokeWatch;
+			packageProductDependencies = (
+				C39499CD27853392002D5038 /* Alamofire */,
+			);
 			productName = PokeWatch;
 			productReference = C394999027852F87002D5038 /* PokeWatch.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +265,10 @@
 				Base,
 			);
 			mainGroup = C394998727852F87002D5038;
+			packageReferences = (
+				C39499CC27853392002D5038 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C39499CF2785341B002D5038 /* XCRemoteSwiftPackageReference "Alamofire-SwiftyJSON" */,
+			);
 			productRefGroup = C394999127852F87002D5038 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -581,6 +590,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -612,6 +622,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -670,6 +681,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C39499CC27853392002D5038 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C39499CF2785341B002D5038 /* XCRemoteSwiftPackageReference "Alamofire-SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/Alamofire-SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C39499CD27853392002D5038 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39499CC27853392002D5038 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C394998827852F87002D5038 /* Project object */;
 }
