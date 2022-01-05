@@ -9,8 +9,12 @@ import SwiftUI
 
 
 struct ContentView: View {
+    var pokemon = Pokemon()
     var body: some View {
         Text("Hello, world!")
+            .onAppear(perform: {
+                pokemon.getPokemon()
+            })
             .padding()
     }
 }
