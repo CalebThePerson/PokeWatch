@@ -21,11 +21,11 @@
 		C39499B727852F8C002D5038 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39499B627852F8C002D5038 /* ComplicationController.swift */; };
 		C39499B927852F8D002D5038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39499B827852F8D002D5038 /* Assets.xcassets */; };
 		C39499BC27852F8D002D5038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39499BB27852F8D002D5038 /* Preview Assets.xcassets */; };
+		C39DCD242788345700DFAA86 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39DCD232788345700DFAA86 /* Pokemon.swift */; };
+		C39DCD272788393400DFAA86 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C39DCD262788393400DFAA86 /* SwiftyJSON */; };
 		C3D350A3278587BB002FC6B3 /* pokemon_names.json in Resources */ = {isa = PBXBuildFile; fileRef = C3D350A2278587BB002FC6B3 /* pokemon_names.json */; };
 		C3D350AC27858B9D002FC6B3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3D350AB27858B9D002FC6B3 /* Alamofire */; };
 		C3D350AF27858BD0002FC6B3 /* PokemonAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C3D350AE27858BD0002FC6B3 /* PokemonAPI */; };
-		C3D350B127858D2E002FC6B3 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D350B027858D2E002FC6B3 /* Pokemon.swift */; };
-		C3D350B427858EAA002FC6B3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C3D350B327858EAA002FC6B3 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +88,8 @@
 		C39499BB27852F8D002D5038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C39499BD27852F8D002D5038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C39499BE27852F8D002D5038 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C39DCD232788345700DFAA86 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		C3D350A2278587BB002FC6B3 /* pokemon_names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemon_names.json; sourceTree = "<group>"; };
-		C3D350B027858D2E002FC6B3 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D350B427858EAA002FC6B3 /* SwiftyJSON in Frameworks */,
+				C39DCD272788393400DFAA86 /* SwiftyJSON in Frameworks */,
 				C3D350AC27858B9D002FC6B3 /* Alamofire in Frameworks */,
 				C3D350AF27858BD0002FC6B3 /* PokemonAPI in Frameworks */,
 			);
@@ -190,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				C3D350A2278587BB002FC6B3 /* pokemon_names.json */,
-				C3D350B027858D2E002FC6B3 /* Pokemon.swift */,
+				C39DCD232788345700DFAA86 /* Pokemon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			packageProductDependencies = (
 				C3D350AB27858B9D002FC6B3 /* Alamofire */,
 				C3D350AE27858BD0002FC6B3 /* PokemonAPI */,
-				C3D350B327858EAA002FC6B3 /* SwiftyJSON */,
+				C39DCD262788393400DFAA86 /* SwiftyJSON */,
 			);
 			productName = PokeWatch;
 			productReference = C394999027852F87002D5038 /* PokeWatch.app */;
@@ -304,7 +304,7 @@
 			packageReferences = (
 				C3D350AA27858B9D002FC6B3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C3D350AD27858BD0002FC6B3 /* XCRemoteSwiftPackageReference "PokemonAPI" */,
-				C3D350B227858EAA002FC6B3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C39DCD252788393400DFAA86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = C394999127852F87002D5038 /* Products */;
 			projectDirPath = "";
@@ -354,7 +354,7 @@
 			files = (
 				C394999627852F87002D5038 /* ContentView.swift in Sources */,
 				C394999427852F87002D5038 /* PokeWatchApp.swift in Sources */,
-				C3D350B127858D2E002FC6B3 /* Pokemon.swift in Sources */,
+				C39DCD242788345700DFAA86 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +722,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C39DCD252788393400DFAA86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		C3D350AA27858B9D002FC6B3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -738,17 +746,14 @@
 				kind = branch;
 			};
 		};
-		C3D350B227858EAA002FC6B3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C39DCD262788393400DFAA86 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39DCD252788393400DFAA86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
 		C3D350AB27858B9D002FC6B3 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C3D350AA27858B9D002FC6B3 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -758,11 +763,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C3D350AD27858BD0002FC6B3 /* XCRemoteSwiftPackageReference "PokemonAPI" */;
 			productName = PokemonAPI;
-		};
-		C3D350B327858EAA002FC6B3 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3D350B227858EAA002FC6B3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
