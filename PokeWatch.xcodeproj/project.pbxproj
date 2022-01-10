@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34404B8278A86F1008D821B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34404B7278A86F1008D821B /* SignUpViewModel.swift */; };
+		C34404BA278A982E008D821B /* DatabaseSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34404B9278A982E008D821B /* DatabaseSave.swift */; };
+		C34404BD278BC7E7008D821B /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34404BC278BC7E6008D821B /* SignUp.swift */; };
+		C34404C0278BD2EC008D821B /* Popovers in Frameworks */ = {isa = PBXBuildFile; productRef = C34404BF278BD2EC008D821B /* Popovers */; };
 		C394999427852F87002D5038 /* PokeWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394999327852F87002D5038 /* PokeWatchApp.swift */; };
 		C394999627852F87002D5038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394999527852F87002D5038 /* ContentView.swift */; };
 		C394999827852F8A002D5038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C394999727852F8A002D5038 /* Assets.xcassets */; };
@@ -23,6 +27,13 @@
 		C39499BC27852F8D002D5038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39499BB27852F8D002D5038 /* Preview Assets.xcassets */; };
 		C39DCD242788345700DFAA86 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39DCD232788345700DFAA86 /* Pokemon.swift */; };
 		C39DCD272788393400DFAA86 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C39DCD262788393400DFAA86 /* SwiftyJSON */; };
+		C39DCD32278A61D000DFAA86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39DCD31278A61D000DFAA86 /* GoogleService-Info.plist */; };
+		C39DCD34278A62DF00DFAA86 /* PokeWatchApp+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39DCD33278A62DF00DFAA86 /* PokeWatchApp+Extension.swift */; };
+		C39DCD44278A660600DFAA86 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C39DCD43278A660600DFAA86 /* GoogleSignIn */; };
+		C39DCD47278A669000DFAA86 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C39DCD46278A669000DFAA86 /* FirebaseAnalytics */; };
+		C39DCD49278A669000DFAA86 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C39DCD48278A669000DFAA86 /* FirebaseAuth */; };
+		C39DCD4B278A669000DFAA86 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C39DCD4A278A669000DFAA86 /* FirebaseDatabase */; };
+		C39DCD4D278A669000DFAA86 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C39DCD4C278A669000DFAA86 /* FirebaseFirestore */; };
 		C3D350A3278587BB002FC6B3 /* pokemon_names.json in Resources */ = {isa = PBXBuildFile; fileRef = C3D350A2278587BB002FC6B3 /* pokemon_names.json */; };
 		C3D350AC27858B9D002FC6B3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3D350AB27858B9D002FC6B3 /* Alamofire */; };
 		C3D350AF27858BD0002FC6B3 /* PokemonAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C3D350AE27858BD0002FC6B3 /* PokemonAPI */; };
@@ -71,6 +82,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C34404B7278A86F1008D821B /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		C34404B9278A982E008D821B /* DatabaseSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseSave.swift; sourceTree = "<group>"; };
+		C34404BC278BC7E6008D821B /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		C394999027852F87002D5038 /* PokeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C394999327852F87002D5038 /* PokeWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeWatchApp.swift; sourceTree = "<group>"; };
 		C394999527852F87002D5038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +103,9 @@
 		C39499BD27852F8D002D5038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C39499BE27852F8D002D5038 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		C39DCD232788345700DFAA86 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		C39DCD31278A61D000DFAA86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C39DCD33278A62DF00DFAA86 /* PokeWatchApp+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PokeWatchApp+Extension.swift"; sourceTree = "<group>"; };
+		C39DCD35278A63C200DFAA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C3D350A2278587BB002FC6B3 /* pokemon_names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemon_names.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,8 +114,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34404C0278BD2EC008D821B /* Popovers in Frameworks */,
+				C39DCD44278A660600DFAA86 /* GoogleSignIn in Frameworks */,
+				C39DCD49278A669000DFAA86 /* FirebaseAuth in Frameworks */,
 				C39DCD272788393400DFAA86 /* SwiftyJSON in Frameworks */,
 				C3D350AC27858B9D002FC6B3 /* Alamofire in Frameworks */,
+				C39DCD47278A669000DFAA86 /* FirebaseAnalytics in Frameworks */,
+				C39DCD4D278A669000DFAA86 /* FirebaseFirestore in Frameworks */,
+				C39DCD4B278A669000DFAA86 /* FirebaseDatabase in Frameworks */,
 				C3D350AF27858BD0002FC6B3 /* PokemonAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C34404BB278BC7B8008D821B /* SignUp+SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				C34404BC278BC7E6008D821B /* SignUp.swift */,
+			);
+			path = "SignUp+SignIn";
+			sourceTree = "<group>";
+		};
 		C394998727852F87002D5038 = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +167,10 @@
 		C394999227852F87002D5038 /* PokeWatch */ = {
 			isa = PBXGroup;
 			children = (
+				C39DCD35278A63C200DFAA86 /* Info.plist */,
 				C394999327852F87002D5038 /* PokeWatchApp.swift */,
 				C394999727852F8A002D5038 /* Assets.xcassets */,
+				C39DCD31278A61D000DFAA86 /* GoogleService-Info.plist */,
 				C3D350A62785884A002FC6B3 /* Extensions */,
 				C3D350A527858844002FC6B3 /* View */,
 				C3D350A427858835002FC6B3 /* Model */,
@@ -186,9 +219,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C39DCD36278A640A00DFAA86 /* Firebased */ = {
+			isa = PBXGroup;
+			children = (
+				C34404B7278A86F1008D821B /* SignUpViewModel.swift */,
+				C34404B9278A982E008D821B /* DatabaseSave.swift */,
+			);
+			path = Firebased;
+			sourceTree = "<group>";
+		};
 		C3D350A427858835002FC6B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C39DCD36278A640A00DFAA86 /* Firebased */,
 				C3D350A2278587BB002FC6B3 /* pokemon_names.json */,
 				C39DCD232788345700DFAA86 /* Pokemon.swift */,
 			);
@@ -198,6 +241,7 @@
 		C3D350A527858844002FC6B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C34404BB278BC7B8008D821B /* SignUp+SignIn */,
 				C394999527852F87002D5038 /* ContentView.swift */,
 			);
 			path = View;
@@ -206,6 +250,7 @@
 		C3D350A62785884A002FC6B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C39DCD33278A62DF00DFAA86 /* PokeWatchApp+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +277,12 @@
 				C3D350AB27858B9D002FC6B3 /* Alamofire */,
 				C3D350AE27858BD0002FC6B3 /* PokemonAPI */,
 				C39DCD262788393400DFAA86 /* SwiftyJSON */,
+				C39DCD43278A660600DFAA86 /* GoogleSignIn */,
+				C39DCD46278A669000DFAA86 /* FirebaseAnalytics */,
+				C39DCD48278A669000DFAA86 /* FirebaseAuth */,
+				C39DCD4A278A669000DFAA86 /* FirebaseDatabase */,
+				C39DCD4C278A669000DFAA86 /* FirebaseFirestore */,
+				C34404BF278BD2EC008D821B /* Popovers */,
 			);
 			productName = PokeWatch;
 			productReference = C394999027852F87002D5038 /* PokeWatch.app */;
@@ -305,6 +356,9 @@
 				C3D350AA27858B9D002FC6B3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C3D350AD27858BD0002FC6B3 /* XCRemoteSwiftPackageReference "PokemonAPI" */,
 				C39DCD252788393400DFAA86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C39DCD42278A660600DFAA86 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				C39DCD45278A669000DFAA86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C34404BE278BD2EC008D821B /* XCRemoteSwiftPackageReference "Popovers" */,
 			);
 			productRefGroup = C394999127852F87002D5038 /* Products */;
 			projectDirPath = "";
@@ -325,6 +379,7 @@
 				C394999B27852F8A002D5038 /* Preview Assets.xcassets in Resources */,
 				C3D350A3278587BB002FC6B3 /* pokemon_names.json in Resources */,
 				C394999827852F8A002D5038 /* Assets.xcassets in Resources */,
+				C39DCD32278A61D000DFAA86 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +407,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34404BD278BC7E7008D821B /* SignUp.swift in Sources */,
 				C394999627852F87002D5038 /* ContentView.swift in Sources */,
 				C394999427852F87002D5038 /* PokeWatchApp.swift in Sources */,
+				C34404B8278A86F1008D821B /* SignUpViewModel.swift in Sources */,
+				C34404BA278A982E008D821B /* DatabaseSave.swift in Sources */,
+				C39DCD34278A62DF00DFAA86 /* PokeWatchApp+Extension.swift in Sources */,
 				C39DCD242788345700DFAA86 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +685,7 @@
 				DEVELOPMENT_TEAM = MMZA244CU5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeWatch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -658,6 +718,7 @@
 				DEVELOPMENT_TEAM = MMZA244CU5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeWatch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -722,9 +783,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C34404BE278BD2EC008D821B /* XCRemoteSwiftPackageReference "Popovers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/Popovers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		C39DCD252788393400DFAA86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C39DCD42278A660600DFAA86 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		C39DCD45278A669000DFAA86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -749,10 +834,40 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C34404BF278BD2EC008D821B /* Popovers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C34404BE278BD2EC008D821B /* XCRemoteSwiftPackageReference "Popovers" */;
+			productName = Popovers;
+		};
 		C39DCD262788393400DFAA86 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C39DCD252788393400DFAA86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		C39DCD43278A660600DFAA86 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39DCD42278A660600DFAA86 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		C39DCD46278A669000DFAA86 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39DCD45278A669000DFAA86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C39DCD48278A669000DFAA86 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39DCD45278A669000DFAA86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C39DCD4A278A669000DFAA86 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39DCD45278A669000DFAA86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		C39DCD4C278A669000DFAA86 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39DCD45278A669000DFAA86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 		C3D350AB27858B9D002FC6B3 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

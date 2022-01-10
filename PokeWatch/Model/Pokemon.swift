@@ -33,7 +33,20 @@ class Pokemon {
         return json!
     }
     
+    //MARK: - Starter Functions
+    func starterPokemon(with starter: String){
+        getPokemonInfo(with: starter) { pokemon in
+            self.getPokemonEvolutionChain(species: (pokemon.species?.name)!) { ID in
+                self.getPokemonEvolution(with: ID) { chain in
+                    print("Pog")
+                }
+            }
+        }
+    }
     
+    
+    //MARK: - Functions for not starters
+
     //Getting a random pokemon and then procedding to get the info of that pokemon
     func getPokemon(){
         let randomMon = allPokemon[String(Int.random(in: 1..<allPokemon.count))]
@@ -46,7 +59,7 @@ class Pokemon {
             }
         }
     }
-    
+    //Gets general information of the pokemon
     func getPokemonInfo(with pokemon: String, completion: @escaping((PKMPokemon)-> Void)) {
         PokemonAPI().pokemonService.fetchPokemon(pokemon){ result in
             switch result{
@@ -57,7 +70,8 @@ class Pokemon {
             }
         }
     }
-    
+    //Literally the only way to fuckin ACQUIRE a evolutionID
+    //Gets the species and then uses an "algorithm" to find the evolution ID
     func getPokemonEvolutionChain(species: String, completion: @escaping((Int)-> Void)){
         PokemonAPI().pokemonService.fetchPokemonSpecies(species){result in
             switch result{
@@ -83,6 +97,7 @@ class Pokemon {
         }
     }
     
+    //Gets the actually evolution Chain from the ID I ACQUIRED
     func getPokemonEvolution(with chainID: Int, completion: @escaping((PKMEvolutionChain) -> Void)){
         PokemonAPI().evolutionService.fetchEvolutionChain(chainID){result in
             switch result{
